@@ -9,14 +9,14 @@ exports.config = {
     ],
     framework: 'mocha',
     capabilities: [{
-        app: join(process.cwd(), './app/android/com.woocommerce.apk'),
+        app: join(process.cwd(), './app/android/test-app.apk'),
         platformName: 'Android',
         platformVersion: '7.0',
         deviceName: 'Pixel 2',
-        appPackage: 'com.woocommerce.android',
-        appActivity: 'ui.main.MainActivity',
+        appPackage: 'com.wdiodemoapp',
+        appActivity: 'com.wdiodemoapp.MainActivity',
     }],
-    waitForTimeTimeout: 20000,
+    waitForTimeout: 20000,
     mochaOpts: {
         timeout: 300000
     }

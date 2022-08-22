@@ -1,9 +1,15 @@
 class HomePage {
-  get #enterStoreAddress() {
-    return $('id:button_login_store')
+
+// Mapeando os elementos
+
+  get #clickForms() {
+    return $('~Forms')
   }
-  async goToLogin() {
-    await this.#enterStoreAddress.click()
+
+  //Criando métodos com os elementos mapeados
+  
+  async clickForms() {
+    await this.#clickForms.click()
   }
 }
 
