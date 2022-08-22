@@ -10,9 +10,5 @@ describe('Verificar Formulário', () => {
   // await formPage.clickDropdown()
   // await formPage.clickButtonActive()
   // await formPage.clickOkActive()
-
-  // expect(await storePage.storeName()).toEqual('Products')
-  // expect(await storePage.storeLogo()).toBeTruthy()
-  // expect(await storePage.storeName()).toEqual('EBAC - Shop')
   });
 })
