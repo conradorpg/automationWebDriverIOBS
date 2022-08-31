@@ -1,0 +1,18 @@
+1 - Crie um job no jenkins para executar os testes no Browserstack 
+2 - Disponibilize o pipeline em um arquivo Jenkins le na raiz do seu projeto
+
+exports.config = {
+  user: process.env.BROWSERSTACK_USERNAME || 'conradoromancene_RgluZQ',
+  key: process.env.BROWSERSTACK_ACCESS_KEY || 'yd7y5KuFfuZixpyiQebz',
+  //...
+  capabilities: [{
+    project: "First Webdriverio Android Project",
+    build: "browserstack-build-1",
+    name: "local_test",
+    device: "Google Pixel 3",
+    os_version: "9.0",
+    app: process.env.BROWSERSTACK_APP_ID || 'bs://59551105e3c37f0037190b540bfc993357897ba7',
+    'browserstack.local': true
+  }],
+  //...
+};
